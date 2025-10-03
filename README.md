@@ -27,5 +27,5 @@ This project demonstrates **OOP concepts, JavaFX UI design, and database integra
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/hiranya52/HotelReservationSystemFX.git
-cd HotelReservationSystemFX
+git clone https://github.com/hiranya52/SerenityGrand-Hotel-Management-System.git
+cd SerenityGrand-Hotel-Management-System
