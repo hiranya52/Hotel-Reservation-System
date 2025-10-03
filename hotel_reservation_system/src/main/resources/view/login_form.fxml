@@ -16,19 +16,19 @@
             <Image url="@../img/logInImg.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="486.0" layoutY="68.0" text="WELCOME TO A WORLD" textFill="#244b49">
+      <Label layoutX="486.0" layoutY="68.0" text="WELCOME TO A WORLD" textFill="#5c4431">
          <font>
             <Font name="Annai MN Regular" size="30.0" />
          </font>
       </Label>
-      <Label layoutX="479.0" layoutY="119.0" text="OF TIMELESS ELEGANCE" textFill="#244b49">
+      <Label layoutX="479.0" layoutY="119.0" text="OF TIMELESS ELEGANCE" textFill="#5c4431">
          <font>
             <Font name="Annai MN Regular" size="30.0" />
          </font>
       </Label>
-      <TextField layoutX="513.0" layoutY="298.0" prefHeight="35.0" prefWidth="310.0" promptText="Username" />
-      <PasswordField layoutX="513.0" layoutY="381.0" prefHeight="35.0" prefWidth="310.0" promptText="Password" />
-      <Button layoutX="514.0" layoutY="474.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="310.0" style="-fx-background-color: #244b49;" text="Login In" textFill="WHITE">
+      <TextField fx:id="txtUsername" layoutX="513.0" layoutY="298.0" prefHeight="35.0" prefWidth="310.0" promptText="Username" />
+      <PasswordField fx:id="txtPassword" layoutX="513.0" layoutY="381.0" prefHeight="35.0" prefWidth="310.0" promptText="Password" />
+      <Button layoutX="514.0" layoutY="474.0" mnemonicParsing="false" onAction="#btnLoginInOnAction" prefHeight="30.0" prefWidth="310.0" style="-fx-background-color: #244b49;" text="Login In" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
