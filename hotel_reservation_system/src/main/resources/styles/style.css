@@ -1,0 +1,7 @@
+.rounded-container {
+    border: 1px solid #5C4431;
+    border-radius: 20px;
+    -fx-background-radius: 20px;
+    box-shadow: 0 4px 8px rgba(92, 68, 49, 0.3);
+}
+
