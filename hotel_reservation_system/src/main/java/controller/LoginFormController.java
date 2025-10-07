@@ -24,7 +24,7 @@ public class LoginFormController {
         String username = txtUsername.getText();
         String password = txtPassword.getText();
 
-        if(username.equals("Admin") && password.equals("Serenity@1234")){
+        if(username.equals("Admin") && password.equals("1234")){
             try {
                 // Load dashboard
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/dashboard.fxml"));
