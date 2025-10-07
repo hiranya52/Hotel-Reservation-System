@@ -1,16 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="620.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomInfoController">
    <children>
-      <Label layoutX="339.0" layoutY="253.0" text="Room Info">
-         <font>
-            <Font size="48.0" />
-         </font>
-      </Label>
+      <ImageView fitHeight="620.0" fitWidth="880.0" layoutY="1.0">
+         <image>
+            <Image url="@../img/bgImg.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="1.0" prefHeight="620.0" prefWidth="880.0">
+         <children>
+            <AnchorPane layoutY="-2.0" prefHeight="70.0" prefWidth="880.0" style="-fx-background-color: #eae5d9;">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="31.0" layoutX="48.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../img/SerenityLogo.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="21.23272705078125" layoutX="202.0" layoutY="45.0" startX="-100.0" stroke="#5c4431" strokeWidth="0.8" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="93.0" layoutY="22.0" text="Serenity Grand Hotel" textFill="#244b49">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="328.0" layoutY="89.0" text="Room Information" textFill="#5c4431">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <TextField layoutX="157.0" layoutY="146.0" prefHeight="32.0" prefWidth="243.0" promptText="Room ID" />
+            <TextField layoutX="158.0" layoutY="203.0" prefHeight="32.0" prefWidth="243.0" promptText="Description" />
+            <TextField layoutX="471.0" layoutY="145.0" prefHeight="32.0" prefWidth="243.0" promptText="Type" />
+            <TextField layoutX="472.0" layoutY="203.0" prefHeight="32.0" prefWidth="243.0" promptText="Price" />
+            <Button layoutX="219.0" layoutY="271.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #244b49;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font></Button>
+            <Button layoutX="334.0" layoutY="272.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Update" textFill="#5c4431">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font></Button>
+            <Button layoutX="449.0" layoutY="273.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Delete" textFill="#5c4431">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font></Button>
+            <Button layoutX="564.0" layoutY="274.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Clear" textFill="#5c4431">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font></Button>
+            <TableView layoutX="115.0" layoutY="334.0" prefHeight="245.0" prefWidth="648.0">
+              <columns>
+                <TableColumn prefWidth="81.97835540771484" style="-fx-border-color: #5C4431;" text="Room ID" />
+                <TableColumn prefWidth="176.1197509765625" style="-fx-border-color: #5C4431;" text="Type" />
+                  <TableColumn prefWidth="241.8802490234375" style="-fx-border-color: #5C4431;" text="Description" />
+                  <TableColumn prefWidth="145.40191650390625" style="-fx-border-color: #5C4431;" text="Price" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

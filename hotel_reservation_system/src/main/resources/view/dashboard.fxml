@@ -19,7 +19,7 @@
          <children>
             <AnchorPane layoutX="324.0" layoutY="106.0" prefHeight="426.0" prefWidth="492.0" style="-fx-background-color: #D6CFC0;" styleClass="rounded-container" stylesheets="@../styles/style.css">
                <children>
-                  <ImageView fitHeight="50.0" fitWidth="31.0" layoutX="231.0" layoutY="22.0">
+                  <ImageView fitHeight="50.0" fitWidth="34.0" layoutX="229.0" layoutY="21.0">
                      <image>
                         <Image url="@../img/SerenityLogo.png" />
                      </image>
