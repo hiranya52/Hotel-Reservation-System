@@ -30,21 +30,22 @@
                      </font>
                   </Label>
                   <Line endX="100.0" layoutX="251.0" layoutY="117.0" startX="-100.0" stroke="#5c4431" />
-                  <Button layoutX="130.0" layoutY="181.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="238.0" style="-fx-background-color: #244b49; -fx-border-color: #eae5d9;" text="Room Info" textFill="WHITE">
+                  <Button layoutX="130.0" layoutY="181.0" mnemonicParsing="false" onAction="#btnRoomInfoOnAction" prefHeight="36.0" prefWidth="238.0" style="-fx-background-color: #244b49; -fx-border-color: #eae5d9;" text="Room Info" textFill="WHITE">
                      <font>
                         <Font name="System Bold Italic" size="15.0" />
                      </font>
                   </Button>
-                  <Button layoutX="131.0" layoutY="240.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="238.0" style="-fx-background-color: #A99884;" text="Customer Info" textFill="#eeeeee">
+                  <Button layoutX="131.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnCustomerInfoOnAction" prefHeight="36.0" prefWidth="238.0" style="-fx-background-color: #A99884;" text="Customer Info" textFill="#eeeeee">
                      <font>
                         <Font name="System Bold Italic" size="15.0" />
                      </font>
                   </Button>
-                  <Button layoutX="131.0" layoutY="304.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="238.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5C4431;" text="Staff Info" textFill="#5c4431">
+                  <Button layoutX="131.0" layoutY="304.0" mnemonicParsing="false" onAction="#btnStaffInfoOnAction" prefHeight="36.0" prefWidth="238.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5C4431;" text="Staff Info" textFill="#5c4431">
                      <font>
                         <Font name="System Bold Italic" size="15.0" />
                      </font>
                   </Button>
+                  <Label layoutX="213.0" layoutY="127.0" text="DASHBOARD" textFill="#5c4431" />
                </children>
             </AnchorPane>
          </children>
