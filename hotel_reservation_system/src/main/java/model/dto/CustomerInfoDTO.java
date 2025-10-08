@@ -7,11 +7,12 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class RoomInfoDTO {
+public class CustomerInfoDTO {
 
     private String id;
-    private String type;
-    private String description;
-    private double price;
+    private String name;
+    private int age;
+    private String phoneNo;
+    private String city;
 
 }

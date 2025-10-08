@@ -40,36 +40,36 @@
                   <Font name="Arial Bold" size="28.0" />
                </font>
             </Label>
-            <TextField layoutX="57.0" layoutY="148.0" prefHeight="32.0" prefWidth="243.0" promptText="Customer ID" />
-            <TextField layoutX="178.0" layoutY="209.0" prefHeight="32.0" prefWidth="243.0" promptText="Phone Number" />
-            <TextField layoutX="317.0" layoutY="147.0" prefHeight="32.0" prefWidth="243.0" promptText="Name" />
-            <TextField layoutX="441.0" layoutY="209.0" prefHeight="32.0" prefWidth="243.0" promptText="City" />
-            <Button layoutX="219.0" layoutY="271.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #244b49;" text="Add" textFill="WHITE">
+            <TextField fx:id="txtCustomerID" layoutX="57.0" layoutY="148.0" prefHeight="32.0" prefWidth="243.0" promptText="Customer ID" />
+            <TextField fx:id="txtPhoneNo" layoutX="178.0" layoutY="209.0" prefHeight="32.0" prefWidth="243.0" promptText="Phone Number" />
+            <TextField fx:id="txtName" layoutX="317.0" layoutY="147.0" prefHeight="32.0" prefWidth="243.0" promptText="Name" />
+            <TextField fx:id="txtCity" layoutX="441.0" layoutY="209.0" prefHeight="32.0" prefWidth="243.0" promptText="City" />
+            <Button layoutX="219.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #244b49;" text="Add" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font></Button>
-            <Button layoutX="334.0" layoutY="272.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Update" textFill="#5c4431">
+            <Button layoutX="334.0" layoutY="272.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Update" textFill="#5c4431">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font></Button>
-            <Button layoutX="449.0" layoutY="273.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Delete" textFill="#5c4431">
+            <Button layoutX="449.0" layoutY="273.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Delete" textFill="#5c4431">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font></Button>
-            <Button layoutX="564.0" layoutY="274.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Clear" textFill="#5c4431">
+            <Button layoutX="564.0" layoutY="274.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Clear" textFill="#5c4431">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font></Button>
-            <TableView layoutX="82.0" layoutY="334.0" prefHeight="245.0" prefWidth="715.0">
+            <TableView fx:id="tblCustomerInfo" layoutX="82.0" layoutY="334.0" prefHeight="245.0" prefWidth="715.0">
                <columns>
-                  <TableColumn prefWidth="98.41201782226562" style="-fx-border-color: #5C4431;" text="Customer ID" />
-                  <TableColumn prefWidth="211.0879364013672" style="-fx-border-color: #5C4431;" text="Name" />
-                  <TableColumn prefWidth="78.25155639648438" style="-fx-border-color: #5C4431;" text="Age" />
-                  <TableColumn prefWidth="172.55718994140625" style="-fx-border-color: #5C4431;" text="Phone Number" />
-                  <TableColumn prefWidth="150.657470703125" style="-fx-border-color: #5C4431;" text="City" />
+                  <TableColumn fx:id="colCusID" prefWidth="98.41201782226562" style="-fx-border-color: #5C4431;" text="Customer ID" />
+                  <TableColumn fx:id="colName" prefWidth="211.0879364013672" style="-fx-border-color: #5C4431;" text="Name" />
+                  <TableColumn fx:id="colAge" prefWidth="78.25155639648438" style="-fx-border-color: #5C4431;" text="Age" />
+                  <TableColumn fx:id="colPhoneNo" prefWidth="172.55718994140625" style="-fx-border-color: #5C4431;" text="Phone Number" />
+                  <TableColumn fx:id="colCity" prefWidth="150.657470703125" style="-fx-border-color: #5C4431;" text="City" />
                </columns>
             </TableView>
-            <TextField layoutX="579.0" layoutY="148.0" prefHeight="32.0" prefWidth="243.0" promptText="Age" />
+            <TextField fx:id="txtAge" layoutX="579.0" layoutY="148.0" prefHeight="32.0" prefWidth="243.0" promptText="Age" />
          </children>
       </AnchorPane>
    </children>

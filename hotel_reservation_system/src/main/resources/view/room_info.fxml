@@ -40,32 +40,32 @@
                   <Font name="Arial Bold" size="28.0" />
                </font>
             </Label>
-            <TextField layoutX="157.0" layoutY="146.0" prefHeight="32.0" prefWidth="243.0" promptText="Room ID" />
-            <TextField layoutX="158.0" layoutY="203.0" prefHeight="32.0" prefWidth="243.0" promptText="Description" />
-            <TextField layoutX="471.0" layoutY="145.0" prefHeight="32.0" prefWidth="243.0" promptText="Type" />
-            <TextField layoutX="472.0" layoutY="203.0" prefHeight="32.0" prefWidth="243.0" promptText="Price" />
-            <Button layoutX="219.0" layoutY="271.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #244b49;" text="Add" textFill="WHITE">
+            <TextField fx:id="txtRoomID" layoutX="157.0" layoutY="146.0" prefHeight="32.0" prefWidth="243.0" promptText="Room ID" />
+            <TextField fx:id="txtDescription" layoutX="158.0" layoutY="203.0" prefHeight="32.0" prefWidth="243.0" promptText="Description" />
+            <TextField fx:id="txtType" layoutX="471.0" layoutY="145.0" prefHeight="32.0" prefWidth="243.0" promptText="Type" />
+            <TextField fx:id="txtPrice" layoutX="472.0" layoutY="203.0" prefHeight="32.0" prefWidth="243.0" promptText="Price" />
+            <Button layoutX="219.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #244b49;" text="Add" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font></Button>
-            <Button layoutX="334.0" layoutY="272.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Update" textFill="#5c4431">
+            <Button layoutX="334.0" layoutY="272.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Update" textFill="#5c4431">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font></Button>
-            <Button layoutX="449.0" layoutY="273.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Delete" textFill="#5c4431">
+            <Button layoutX="449.0" layoutY="273.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Delete" textFill="#5c4431">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font></Button>
-            <Button layoutX="564.0" layoutY="274.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Clear" textFill="#5c4431">
+            <Button layoutX="564.0" layoutY="274.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Clear" textFill="#5c4431">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font></Button>
-            <TableView layoutX="115.0" layoutY="334.0" prefHeight="245.0" prefWidth="648.0">
+            <TableView fx:id="tblRoomInfo" layoutX="115.0" layoutY="334.0" prefHeight="245.0" prefWidth="648.0">
               <columns>
-                <TableColumn prefWidth="81.97835540771484" style="-fx-border-color: #5C4431;" text="Room ID" />
-                <TableColumn prefWidth="176.1197509765625" style="-fx-border-color: #5C4431;" text="Type" />
-                  <TableColumn prefWidth="241.8802490234375" style="-fx-border-color: #5C4431;" text="Description" />
-                  <TableColumn prefWidth="145.40191650390625" style="-fx-border-color: #5C4431;" text="Price" />
+                <TableColumn fx:id="colRoomID" prefWidth="81.97835540771484" style="-fx-border-color: #5C4431;" text="Room ID" />
+                <TableColumn fx:id="colType" prefWidth="176.1197509765625" style="-fx-border-color: #5C4431;" text="Type" />
+                  <TableColumn fx:id="colDescription" prefWidth="241.8802490234375" style="-fx-border-color: #5C4431;" text="Description" />
+                  <TableColumn fx:id="colPrice" prefWidth="145.40191650390625" style="-fx-border-color: #5C4431;" text="Price" />
               </columns>
             </TableView>
          </children>
