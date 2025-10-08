@@ -71,7 +71,12 @@ public class StaffInfoController implements Initializable {
 
     @FXML
     void btnClearOnAction(ActionEvent event) {
-
+        txtStaffID.setText("");
+        txtName.setText("");
+        txtRole.setText("");
+        txtEmail.setText("");
+        txtPhoneNo.setText("");
+        txtSalary.setText("");
     }
 
     @FXML
