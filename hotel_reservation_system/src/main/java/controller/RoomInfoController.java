@@ -88,6 +88,14 @@ public class RoomInfoController implements Initializable {
 
     @FXML
     void btnUpdateOnAction(ActionEvent event) {
+        RoomInfoDTO selectedRoom = tblRoomInfo.getSelectionModel().getSelectedItem();
+
+        selectedRoom.setId(txtRoomID.getText());
+        selectedRoom.setType(txtType.getText());
+        selectedRoom.setDescription(txtDescription.getText());
+        selectedRoom.setPrice(Double.parseDouble(txtPrice.getText()));
+
+        tblRoomInfo.refresh();
 
     }
 
