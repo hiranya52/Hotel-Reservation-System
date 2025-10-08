@@ -122,6 +122,24 @@ public class StaffInfoController implements Initializable {
     @FXML
     void btnUpdateOnAction(ActionEvent event) {
 
+        StaffInfoDTO selectedStaff = tblStaffInfo.getSelectionModel().getSelectedItem();
+
+        selectedStaff.setId(txtStaffID.getText());
+        selectedStaff.setName(txtName.getText());
+        selectedStaff.setRole(txtRole.getText());
+        selectedStaff.setEmail(txtEmail.getText());
+        selectedStaff.setPhoneNo(txtPhoneNo.getText());
+        selectedStaff.setSalary(Double.parseDouble(txtSalary.getText()));
+
+        tblStaffInfo.refresh();
+
+        txtStaffID.setText("");
+        txtName.setText("");
+        txtRole.setText("");
+        txtEmail.setText("");
+        txtPhoneNo.setText("");
+        txtSalary.setText("");
+
     }
 
     @Override
