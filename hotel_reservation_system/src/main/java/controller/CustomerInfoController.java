@@ -127,7 +127,7 @@ public class CustomerInfoController implements Initializable {
         txtAge.setText("");
         txtPhoneNo.setText("");
         txtCity.setText("");
-        
+
     }
 
     @Override
