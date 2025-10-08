@@ -79,7 +79,11 @@ public class RoomInfoController implements Initializable {
 
     @FXML
     void btnDeleteOnAction(ActionEvent event) {
-
+        RoomInfoDTO selectedRoom = tblRoomInfo.getSelectionModel().getSelectedItem();
+        if (selectedRoom != null){
+            roomInfoDTOS.remove(selectedRoom);
+            tblRoomInfo.refresh();
+        }
     }
 
     @FXML
