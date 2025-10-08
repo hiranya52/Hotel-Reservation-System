@@ -52,6 +52,20 @@ public class RoomInfoController implements Initializable {
 
     @FXML
     void btnAddOnAction(ActionEvent event) {
+        String roomId = txtRoomID.getText();
+        String type = txtType.getText();
+        String description = txtDescription.getText();
+        double price = Double.parseDouble(txtPrice.getText());
+
+        RoomInfoDTO roomInfoDTO = new RoomInfoDTO(roomId,type,description,price);
+
+        roomInfoDTOS.add(roomInfoDTO);
+        tblRoomInfo.refresh();
+
+        txtRoomID.setText("");
+        txtType.setText("");
+        txtDescription.setText("");
+        txtPrice.setText("");
 
     }
 
