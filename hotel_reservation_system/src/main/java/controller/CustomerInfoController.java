@@ -11,6 +11,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import model.dto.CustomerInfoDTO;
 
+import java.awt.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -60,6 +61,23 @@ public class CustomerInfoController implements Initializable {
     @FXML
     void btnAddOnAction(ActionEvent event) {
 
+        String customerID = txtCustomerID.getText();
+        String name = txtName.getText();
+        int age = Integer.parseInt(txtAge.getText());
+        String phoneNo = txtPhoneNo.getText();
+        String city = txtCity.getText();
+
+        CustomerInfoDTO customerInfoDTO = new CustomerInfoDTO(customerID,name,age,phoneNo,city);
+
+        customerInfoDTOS.add(customerInfoDTO);
+        tblCustomerInfo.refresh();
+
+        txtCustomerID.setText("");
+        txtName.setText("");
+        txtAge.setText("");
+        txtPhoneNo.setText("");
+        txtCity.setText("");
+
     }
 
     @FXML
@@ -76,11 +94,40 @@ public class CustomerInfoController implements Initializable {
     @FXML
     void btnDeleteOnAction(ActionEvent event) {
 
+        CustomerInfoDTO selectedCustomer = tblCustomerInfo.getSelectionModel().getSelectedItem();
+
+        if(selectedCustomer != null){
+            customerInfoDTOS.remove(selectedCustomer);
+            tblCustomerInfo.refresh();
+        }
+
+        txtCustomerID.setText("");
+        txtName.setText("");
+        txtAge.setText("");
+        txtPhoneNo.setText("");
+        txtCity.setText("");
+
     }
 
     @FXML
     void btnUpdateOnAction(ActionEvent event) {
 
+        CustomerInfoDTO selectedCustomer = tblCustomerInfo.getSelectionModel().getSelectedItem();
+
+        selectedCustomer.setId(txtCustomerID.getText());
+        selectedCustomer.setName(txtName.getText());
+        selectedCustomer.setAge(Integer.parseInt(txtAge.getText()));
+        selectedCustomer.setPhoneNo(txtPhoneNo.getText());
+        selectedCustomer.setCity(txtCity.getText());
+
+        tblCustomerInfo.refresh();
+
+        txtCustomerID.setText("");
+        txtName.setText("");
+        txtAge.setText("");
+        txtPhoneNo.setText("");
+        txtCity.setText("");
+        
     }
 
     @Override
