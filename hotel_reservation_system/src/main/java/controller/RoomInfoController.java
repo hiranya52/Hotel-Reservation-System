@@ -57,7 +57,10 @@ public class RoomInfoController implements Initializable {
 
     @FXML
     void btnClearOnAction(ActionEvent event) {
-
+        txtRoomID.setText("");
+        txtType.setText("");
+        txtDescription.setText("");
+        txtPrice.setText("");
     }
 
     @FXML
