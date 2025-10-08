@@ -67,16 +67,37 @@ public class StaffInfoController implements Initializable {
     @FXML
     void btnAddOnAction(ActionEvent event) {
 
-    }
+        String id = txtStaffID.getText();
+        String name = txtName.getText();
+        String role = txtRole.getText();
+        String email = txtEmail.getText();
+        String phoneNo = txtPhoneNo.getText();
+        double salary = Double.parseDouble(txtSalary.getText());
 
-    @FXML
-    void btnClearOnAction(ActionEvent event) {
+        StaffInfoDTO staffInfoDTO = new StaffInfoDTO(id,name,role,email,phoneNo,salary);
+
+        staffInfoDTOS.add(staffInfoDTO);
+        tblStaffInfo.refresh();
+
         txtStaffID.setText("");
         txtName.setText("");
         txtRole.setText("");
         txtEmail.setText("");
         txtPhoneNo.setText("");
         txtSalary.setText("");
+
+    }
+
+    @FXML
+    void btnClearOnAction(ActionEvent event) {
+
+        txtStaffID.setText("");
+        txtName.setText("");
+        txtRole.setText("");
+        txtEmail.setText("");
+        txtPhoneNo.setText("");
+        txtSalary.setText("");
+
     }
 
     @FXML
