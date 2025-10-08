@@ -40,38 +40,38 @@
                   <Font name="Arial Bold" size="28.0" />
                </font>
             </Label>
-            <TextField layoutX="57.0" layoutY="148.0" prefHeight="32.0" prefWidth="243.0" promptText="Staff ID" />
-            <TextField layoutX="56.0" layoutY="207.0" prefHeight="32.0" prefWidth="243.0" promptText="Email" />
-            <TextField layoutX="317.0" layoutY="147.0" prefHeight="32.0" prefWidth="243.0" promptText="Name" />
-            <TextField layoutX="318.0" layoutY="207.0" prefHeight="32.0" prefWidth="243.0" promptText="Phone Number" />
-            <Button layoutX="219.0" layoutY="271.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #244b49;" text="Add" textFill="WHITE">
+            <TextField fx:id="txtStaffID" layoutX="57.0" layoutY="148.0" prefHeight="32.0" prefWidth="243.0" promptText="Staff ID" />
+            <TextField fx:id="txtEmail" layoutX="56.0" layoutY="207.0" prefHeight="32.0" prefWidth="243.0" promptText="Email" />
+            <TextField fx:id="txtName" layoutX="317.0" layoutY="147.0" prefHeight="32.0" prefWidth="243.0" promptText="Name" />
+            <TextField fx:id="txtPhoneNo" layoutX="318.0" layoutY="207.0" prefHeight="32.0" prefWidth="243.0" promptText="Phone Number" />
+            <Button layoutX="219.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #244b49;" text="Add" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font></Button>
-            <Button layoutX="334.0" layoutY="272.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Update" textFill="#5c4431">
+            <Button layoutX="334.0" layoutY="272.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Update" textFill="#5c4431">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font></Button>
-            <Button layoutX="449.0" layoutY="273.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Delete" textFill="#5c4431">
+            <Button layoutX="449.0" layoutY="273.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Delete" textFill="#5c4431">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font></Button>
-            <Button layoutX="564.0" layoutY="274.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Clear" textFill="#5c4431">
+            <Button layoutX="564.0" layoutY="274.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: #eae5d9; -fx-border-color: #5c4431;" text="Clear" textFill="#5c4431">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font></Button>
-            <TableView layoutX="31.0" layoutY="334.0" prefHeight="245.0" prefWidth="818.0">
+            <TableView fx:id="tblStaffInfo" layoutX="31.0" layoutY="334.0" prefHeight="245.0" prefWidth="818.0">
                <columns>
-                  <TableColumn prefWidth="83.72964096069336" style="-fx-border-color: #5C4431;" text="Staff ID" />
-                  <TableColumn prefWidth="154.9687042236328" style="-fx-border-color: #5C4431;" text="Name" />
-                  <TableColumn prefWidth="132.009521484375" style="-fx-border-color: #5C4431;" text="Role" />
-                  <TableColumn prefWidth="179.99050903320312" style="-fx-border-color: #5C4431;" text="Email" />
-                  <TableColumn prefWidth="141.28460693359375" style="-fx-border-color: #5C4431;" text="Phone Number" />
-                  <TableColumn prefWidth="122.95440673828125" style="-fx-border-color: #5C4431;" text="Salary" />
+                  <TableColumn fx:id="colStaffID" prefWidth="83.72964096069336" style="-fx-border-color: #5C4431;" text="Staff ID" />
+                  <TableColumn fx:id="colName" prefWidth="154.9687042236328" style="-fx-border-color: #5C4431;" text="Name" />
+                  <TableColumn fx:id="colRole" prefWidth="132.009521484375" style="-fx-border-color: #5C4431;" text="Role" />
+                  <TableColumn fx:id="colEmail" prefWidth="179.99050903320312" style="-fx-border-color: #5C4431;" text="Email" />
+                  <TableColumn fx:id="colPhoneNo" prefWidth="141.28460693359375" style="-fx-border-color: #5C4431;" text="Phone Number" />
+                  <TableColumn fx:id="colSalary" prefWidth="122.95440673828125" style="-fx-border-color: #5C4431;" text="Salary" />
                </columns>
             </TableView>
-            <TextField layoutX="579.0" layoutY="148.0" prefHeight="32.0" prefWidth="243.0" promptText="Role" />
-            <TextField layoutX="580.0" layoutY="206.0" prefHeight="32.0" prefWidth="243.0" promptText="Salary" />
+            <TextField fx:id="txtRole" layoutX="579.0" layoutY="148.0" prefHeight="32.0" prefWidth="243.0" promptText="Role" />
+            <TextField fx:id="txtSalary" layoutX="580.0" layoutY="206.0" prefHeight="32.0" prefWidth="243.0" promptText="Salary" />
          </children>
       </AnchorPane>
    </children>
