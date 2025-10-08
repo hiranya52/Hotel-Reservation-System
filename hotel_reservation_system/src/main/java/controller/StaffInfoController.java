@@ -103,6 +103,20 @@ public class StaffInfoController implements Initializable {
     @FXML
     void btnDeleteOnAction(ActionEvent event) {
 
+        StaffInfoDTO selectedStaff = tblStaffInfo.getSelectionModel().getSelectedItem();
+
+        if (selectedStaff != null){
+            staffInfoDTOS.remove(selectedStaff);
+            tblStaffInfo.refresh();
+        }
+
+        txtStaffID.setText("");
+        txtName.setText("");
+        txtRole.setText("");
+        txtEmail.setText("");
+        txtPhoneNo.setText("");
+        txtSalary.setText("");
+
     }
 
     @FXML
